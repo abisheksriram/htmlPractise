@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+  
+  
+  
+  
+  <h1> This is a HTML document containing Few examples of  rarely used HTML Tags important for placement prep</h1>
+ source: https://www.w3schools.com/
+  <br>
+  <br>
+  
+  
+  
+  
+<h1>The abbr element</h1>
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+------------------------------------------------
+
+<h1>The cite element</h1>
+<p><cite>The Scream</cite> by Edward Munch. Painted in 1893.</p>
+------------------------------------------------
+
+<h1>The dfn element</h1>
+
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+------------------------------------------------
+<h1>The map and area elements</h1>
+
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic:</p>
+---------------------------------------------------
+
+The <article> tag specifies independent, self-contained content.
+
+An article should make sense on its own and it should be possible to distribute it independently from the rest of the site.
+
+Potential sources for the <article> element:
+
+Forum post
+Blog post
+News story
+Note: The <article> element does not render as anything special in a browser. However, you can use CSS to style the <article> element (see example below).
+
+---------------------------
+<h1>The bdi element</h1>
+
+<p>In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").</p>
+
+<ul>
+ <li>User <bdi>hrefs</bdi>: 60 points</li>
+ <li>User <bdi>jdoe</bdi>: 80 points</li>
+ <li>User <bdi>إيان</bdi>: 90 points</li>
+</ul>
+------------------------------------------------<br>
+<h2>BDO->rtl </h2>
+<p dir="rtl">
+<bdo dir="rtl"> <!--           -->
+This text will go right-to-left.
+</bdo>
+</p>
+<br>
+------------------------------------------------<br>
+<!--           -->
+<blockquote cite="http://www.worldwildlife.org/who/index.html">
+For 50 years, WWF has been protecting the future of nature. The world's leading conservation organization, WWF works in 100 countries and is supported by 1.2 million members in the United States and close to 5 million globally.
+</blockquote>
+
+
+
+The &lt;blockquote&gt; tag specifies a section that is quoted from another source.
+
+Browsers usually indent &lt;blockquote&gt; elements (look at example below to see how to remove the indentation).
+
+<br>------------------------------------------------<br>
+<!--     The <caption> tag defines a table caption.
+
+The <caption> tag must be inserted immediately after the <table> tag.
+
+Tip: By default, a table caption will be center-aligned above a table. However, the CSS properties text-align and caption-side can be used to align and place the caption.      -->
+<p>The HTML <code>button</code> tag defines a clickable button.</p>
+
+<p>The CSS <code>background-color</code> property defines the background color of an element.</p>
+
+
+<br>------------------------------------------------<br>
+<!--   
+The <dialog> tag defines a dialog box or subwindow.
+
+The <dialog> element makes it easy to create popup dialogs and modals on a web page.
+
+The <fieldset> tag is used to group related elements in a form.
+
+The <fieldset> tag draws a box around the related elements.
+
+<figure>
+  <img src="pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+-->
+<dialog open>This is an open dialog window</dialog>
+<br>------------------------------------------------<br>
+<!--    HTML <legend> Tag
+
+Example
+Group related elements in a form:       -->
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>The legend element</h1>
+
+<form action="/action_page.php">
+ <fieldset>
+  <legend>Personalia:</legend>
+
+  <label for="birthday">Birthday:</label>
+  <input type="date" id="birthday" name="birthday"><br><br>
+  <input type="submit" value="Submit">
+ </fieldset>
+</form>
+
+</body>
+</html>
+
+
+<br>------------------------------------------------<br>
+<!-- The <mark> tag defines text that should be marked or highlighted.          -->
+<h1>The mark element</h1>
+
+<p>Do not forget to buy <mark>milk</mark> today.</p>
+
+
+
+
+<br>------------------------------------------------<br>
+<!--     
+
+The <meter> tag defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+
+Examples: Disk usage, the relevance of a query result, etc.
+
+Note: The <meter> tag should not be used to indicate progress (as in a progress bar). For progress bars, use the <progress> tag.
+
+Tip: Always add the <label> tag for best accessibility practices!
+-->
+<h1>The meter element</h1>
+
+<p>The meter element is used to display a gauge:</p>
+
+<label for="disk_c">Disk usage C:</label>
+<meter id="disk_c" value="2" min="0" max="10">2 out of 10</meter><br>
+
+<label for="disk_d">Disk usage D:</label>
+<meter id="disk_d" value="0.6">60%</meter>
+
+<p><strong>Note:</strong> The meter tag is not supported in Edge 12 (or earlier).</p>
+
+<br>------------------------------------------------<br>
+
+<!--      
+
+The <noscript> tag defines an alternate content to be displayed to users that have disabled scripts in their browser or have a browser that doesn't support script.
+
+The <noscript> element can be used in both <head> and <body>. When used inside <head>, the <noscript> element could only contain <link>, <style>, and <meta> elements.
+
+
+-->
+
+<script>
+document.write("Hello World!")
+</script>
+<noscript>Your browser does not support JavaScript!</noscript>
+
+
+<br>------------------------------------------------<br>
+<!--           -->
+
+<form action="/action_page.php">
+  <label for="cars">Choose a car:</label>
+  <select name="cars" id="cars">
+    <optgroup label="Swedish Cars">
+      <option value="volvo">Volvo</option>
+      <option value="saab">Saab</option>
+    </optgroup>
+    <optgroup label="German Cars">
+      <option value="mercedes">Mercedes</option>
+      <option value="audi">Audi</option>
+    </optgroup>
+  </select>
+  <br><br>
+  <input type="submit" value="Submit">
+</form>
+<br>------------------------------------------------<br>
+
+<!--           -->
+<h1>The output element</h1>
+
+<form oninput="x.value=parseInt(a.value)+parseInt(b.value)">
+<input type="range" id="a" value="50">
++<input type="number" id="b" value="25">
+=<output name="x" for="a b"></output>
+</form>
+
+
+<br>------------------------------------------------<br>
+<!--    The <pre> tag defines preformatted text.
+
+Text in a <pre> element is displayed in a fixed-width font, and the text preserves both spaces and line breaks. The text will be displayed exactly as written in the HTML source code.       -->
+
+<h1>The pre element</h1>
+
+<pre>
+Text in a pre element is displayed in a fixed-width
+font, and it preserves
+both      spaces and
+line breaks
+</pre>
+
+
+<br>------------------------------------------------<br>
+<!--           -->
+
+
+<h1>The wbr element   Word Break Opportunity</h1>
+
+<p>Try to shrink the browser window, to view how the very long word in 
+the paragraph below will break:</p>
+
+<p>This is a veryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryveryvery<wbr>longwordthatwillbreakatspecific<wbr>placeswhenthebrowserwindowisresized.</p>
+
+
+<br>------------------------------------------------<br>
+
+<!--           -->
+
+
+<br>------------------------------------------------<br>
+<!--           -->
+
+
+
+
+<br>------------------------------------------------<br>
+<address>
+Written by <a href="mailto:webmaster@example.com">Jon Doe</a>.<br>
+Visit us at:<br>
+Example.com<br>
+Box 564, Disneyland<br>
+USA
+</address> <!--element usually renders in italic,will always add a line break before and after the -->
+
+</body>
+</html>
