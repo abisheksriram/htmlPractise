@@ -1,4 +1,4 @@
-theme: jekyll-theme-slate
+# Hacktoberfast 2021 Accepted
 ## Welcome to GitHub Pages
 
 
